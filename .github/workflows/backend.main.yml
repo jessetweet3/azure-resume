@@ -34,6 +34,9 @@ jobs:
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
         dotnet build --configuration Release --output ./output
         popd
+    
+    - name: 'List Directories'  # This is the new step
+      run: ls -la
 
     - name: 'Run unit test'
       shell: pwsh
