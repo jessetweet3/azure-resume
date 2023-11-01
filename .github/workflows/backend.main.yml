@@ -36,7 +36,7 @@ jobs:
         popd
     
     - name: 'List Directories'  # This is the new step
-      run: ls -la
+      run: ls
 
     - name: 'Run unit test'
       shell: pwsh
